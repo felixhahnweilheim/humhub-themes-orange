@@ -1,0 +1,34 @@
+.btn {
+    border-radius: 20px;
+}
+
+.wall-entry-content .btn.btn-default:hover, .wall-entry-content .btn.btn-default:focus {
+    color: @info !important;
+}
+.wall-entry-content .btn.btn-primary:hover, .wall-entry-content .btn.btn-primary:focus {
+    color: @text-color-contrast !important;
+}
+
+.btn-default {
+    &:hover,
+    &:focus {
+      background: lighten(@default, 2%);
+    }
+}
+
+.btn-primary {
+    &:hover,
+    &:focus {
+        background: @hover;
+        color: @text-color-contrast;
+        border: none;
+    }
+}
+.btn-info {
+    &:hover,
+    &:focus {
+        background: @hover !important;
+        color: @text-color-contrast;
+        border: none;
+}
+}

@@ -1,0 +1,36 @@
+.login-container {
+	background-color: @background-color-page;
+	background-image: linear-gradient(to right, @background-color-page, 0%, lighten(@background-color-page, 10%) 50%, lighten(@background-color-page, 10%) 100%), linear-gradient(to right, lighten(@background-color-page, 5%) 0%, lighten(@background-color-page, 25%) 51%, lighten(@background-color-page, 20%) 100%);
+
+	.text {
+        	color: @primary;
+
+        	a {
+            		color: @link;
+        	}
+    	}
+
+    	.panel a {
+        	color: @link;
+    	}
+
+    	h1,
+	h2 {
+        	color: @primary !important;
+	}
+
+	.panel {
+        	box-shadow: 0 0 15px #627d92;
+        	-moz-box-shadow: 0 0 15px #627d92;
+        	-webkit-box-shadow: 0 0 15px #627d92;
+
+        	h1,
+        	h2 {
+            		color: @text-color-main !important;
+        	}
+    	}
+
+    	select {
+        	color: @text-color-highlight;
+    	}
+}

@@ -1,0 +1,39 @@
+#gallery-container {
+    #gallery-list .row .gallery-list-entry .panel {
+        .panel-body a img {
+            background-color: @text-color-soft2;
+        }
+        .panel-heading {
+            a {
+                color: @info;
+            }
+            a:hover {
+                color: @info;
+            }
+        }
+    }
+    .social-activities-gallery{
+    
+        color: transparent !important;
+        padding-top: 5px;
+        
+        a {
+            font-size: 16px !important;
+        }
+        .likeLinkContainer a {
+            color: @heart-color;
+        }
+        .likeLinkContainer a:hover {
+            color: @heart-color;
+            text-shadow:0 0 2px lighten(@heart-color, 10%);
+        }
+        > a {
+            font-size: 16px;
+            color: @link !important;
+        }
+        > a:hover {
+            color: @link;
+            text-shadow:0 0 2px lighten(@link, 10%);
+        }
+    }
+}

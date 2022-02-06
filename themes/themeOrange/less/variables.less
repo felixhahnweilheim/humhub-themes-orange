@@ -1,0 +1,101 @@
+//For all changed values the original value of the community theme (january 2022) has been added as comment.
+//Additionally there are the "NEW variables for this theme".
+
+//
+// Theme color variables
+// --------------------------------------------------
+@import (reference) "../../../../../../protected/vendor/npm-asset/bootstrap/less/mixins.less";
+@import (reference) "../../../../../../protected/vendor/npm-asset/font-awesome/less/variables.less";
+
+//
+// Colors for buttons status etc.
+// --------------------------------------------------
+@default: #fafafa; //community theme: #f3f3f3 - used for changes in the mail module
+@primary: #d56c2b; //#d74423; //community theme: #435f6f
+@info: @primary;   //community theme: #21A1B3 - lighter than @primary
+@success: #618416; //community theme: #97d271
+@warning: #d54520; //community theme: #FFC107
+@danger: #ff0000;  //community theme: #FC4A64
+@link: #2278a3;    //community theme: @info (#21A1B3)
+@isFluid: false;   //community theme: false
+
+
+//
+// Text color
+// --------------------------------------------------
+
+// Default body text color.
+@text-color-main: #333131; //community theme: #555
+
+// used for some icons and buttons etc. - former @font2
+@text-color-secondary: #575757; //community theme: #7a7a7a
+
+// highlighted text like some active links hovered links etc. - former @font3
+// Usernames in dashboard, Titles in sidebar, menu items
+@text-color-highlight: #3b1000; // community theme: #000
+
+// side information like dates, placeholder, some dropdown headers - former @font4
+@text-color-soft: #222121; //community theme: #555555
+
+// also side information wall entry links (like/comment), help blocks in forms etc.  - former @font5
+@text-color-soft2: #9a9a9a; //community theme: #aeaeae
+
+// used in gridview summary and installer - former @font1
+@text-color-soft3: #bac2c7; //community theme: #bac2c7
+
+// used as contrast color for @primary, @info, @success, @warning, @danger backgrounds for buttons etc.
+// Note that @default does not use a contrast color @default is normally combined with @text-color-secondary
+@text-color-contrast: #fff;
+
+// NEW variables for this theme
+@hover: #cccccc;
+@custom-topbar-background: @background-color-secondary;
+@custom-topbar-contrast: @primary;
+@heart-color: #ab0909;
+
+//
+// Text color
+// --------------------------------------------------
+
+// main content background color should be in contrast with @text-color-main, @text-color-secondary and other text colors
+@background-color-main: #fff;
+
+// used beside others for tabs - former @background1
+@background-color-secondary: #efedeb; //community theme: #f7f7f7
+
+// page background which is also used for other ui components as comment box etc. - former @background2
+@background-color-page: @background-color-secondary; //community theme: #ededed
+
+// text highlight
+@background-color-highlight: #e5e6e7; //community theme: #fff8e0
+
+// Additional background colors
+@background3: #d7d7d7;
+@background4: #b2b2b2;
+
+//
+// Bootstrap Alert boxes (taken from community theme without changes)
+// --------------------------------------------------
+
+// Alert box success (used in forms)
+@background-color-success: #f7fbf4;
+@text-color-success: #00ae52; //community theme: #84be5e
+@border-color-success: #22cc77; //community theme: #97d271
+
+// Alert box warning (used in forms)
+@background-color-warning: #fffbf7;
+@text-color-warning: #e9b168; 
+@border-color-warning: #fdd198;
+
+// Alert box danger (used in forms)
+@background-color-danger: #fff6f6;
+@text-color-danger: #ff8989;
+@border-color-danger: #ff8989;
+
+//
+// Fonts
+// --------------------------------------------------
+
+// Mail Fonts
+@mail-font-url: 'http://fonts.googleapis.com/css?family=Open+Sans:300,100,400,600';
+@mail-font-family: 'Open Sans', Arial, Tahoma, Helvetica, sans-serif;

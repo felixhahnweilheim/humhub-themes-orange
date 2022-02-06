@@ -17,7 +17,7 @@ Please give me some feedback how it works for you.
 
 ## Changes in comparison to the community theme
 ### 1. Topic list in spaces
-- **Thanks to @raphaeljolivet** (see https://github.com/humhub/humhub/pull/4785) I was able to add a topic list to the left sidebar of spaces (only shown if there is at least one topic)
+**Thanks to @raphaeljolivet** (see https://github.com/humhub/humhub/pull/4785) I was able to add a topic list to the left sidebar of spaces (only shown if there is at least one topic)
 ![](../resources/screenshot-space-topic-list.png)
 
 ### 2. Comment and like icons instead of text
@@ -34,22 +34,22 @@ Please give me some feedback how it works for you.
 - Hover for "view all" in the tasks widget header, see `less/tasks.less`
 
 ### 4. Restyled buttons
-- see `less/button.less`
+see `less/button.less`
 
 ![](../resources/screenshot-space-header-buttons.png)
 ![](../resources/screenshot-people-buttons.png)
 
 ### 6. Comment create form: fixed button over text
-- see `less/mixins.less`, solved with padding-right
+see `less/mixins.less`, solved with padding-right
 
 ### 7. Added Language Switcher in
 - Login modal window, at the bottom
 - Registration page, beneath the title
 
 ### 8. Editor for tasks, wiki, polls etc.: fixed non-floating menubar lead to a lot of scrolling on mobile
-- see `less/mixins.less` (solved with max-height)
+see `less/mixins.less` (solved with max-height)
 
 ### 9. Full-width Dashboard for guests
-- does not show the widgets "New People" and "New Spaces" in order not to show names and internal things to the public
+does not show the widgets "New People" and "New Spaces" in order not to show names and internal things to the public
 
-### Details
+### 10. [Some smaller things ...](DETAILS.md)

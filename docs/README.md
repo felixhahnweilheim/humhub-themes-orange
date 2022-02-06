@@ -4,7 +4,7 @@
 
 **Version:** 0.1.0
 
-This is a child theme, the changes compared to the community theme are listed below.
+This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-module), the changes compared to the community theme are listed below.
 
 **Author:** Felix Hahn, info@hahn-felix.de - self-learned, hobbyist
 

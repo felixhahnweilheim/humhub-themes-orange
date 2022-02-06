@@ -18,14 +18,18 @@ Please give me some feedback how it works for you.
 ## Changes in comparison to the community theme
 ### 1. Topic list in spaces
 **Thanks to @raphaeljolivet** (see https://github.com/humhub/humhub/pull/4785) I was able to add a topic list to the left sidebar of spaces (only shown if there is at least one topic)
-![](../resources/screenshot-space-topic-list.png)
+
+<img src="../resources/screenshot-space-topic-list.png" width="700">
 
 ### 2. Comment and like icons instead of text
-![](../resources/screenshot-social-controls-2.png)
+
+<img src="../resources/screenshot-social-controls-2.png" width="200">
 
 ### 3. Colors
 - bright topbar (added variable @custom-topbar-background and @custom-topbar-contrast)
-![](../resources/screenshot-header-desktop.png)
+
+<img src="../resources/screenshot-header-desktop.png" width="700">
+
 - bright dropdown menus (background same as topbar), text-color: @text-color-highlight instead of white
 - color changes in comparison to the HumHub Community theme are mentioned in the file `less/variables.less`
 
@@ -36,8 +40,9 @@ Please give me some feedback how it works for you.
 ### 4. Restyled buttons
 see `less/button.less`
 
-![](../resources/screenshot-space-header-buttons.png)
-![](../resources/screenshot-people-buttons.png)
+<img src="../resources/screenshot-space-header-buttons.png" width="200">
+
+<img src="../resources/screenshot-people-buttons.png" width="400">
 
 ### 6. Comment create form: fixed button over text
 see `less/mixins.less`, solved with padding-right

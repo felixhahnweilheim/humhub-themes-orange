@@ -7,6 +7,4 @@
 If you try out the theme with another HumHub version than 1.10, please rebuild css/theme.css (see the [HumHub Theming guide](https://docs.humhub.org/docs/theme/css#compile-css-package)).
 
 ## Deactivating / Deleting
-To be sure everything works correctly, I first choose the Community theme in Administration > Settings > Appearance (save at the bottom) and then deactivate the module.
-
-To remove the module please go to `/protected` and execute `php yii module/remove 'humhub-themes-orange'`
+To be sure everything works correctly, I first choose the Community theme in Administration > Settings > Appearance (save at the bottom) and then deactivate the module. Then you can also safely delete the module.

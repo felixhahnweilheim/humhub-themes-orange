@@ -9,9 +9,8 @@ This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-m
 **Author:** Felix Hahn, info@hahn-felix.de - self-learned, hobbyist
 
 ## State of development
-I tried to exactly follow the official theming documentation and it works fine in my HumHub installation. But I have not tested all possible settings and available modules.
-
-That's why I recommend you to test the module with your settings, modules etc. and/or look through my code before activating it on a production site. **Please note:** Currently you have to remove the module manually as [described here](https://github.com/felixhahnweilheim/humhub-themes-orange/blob/doc-fix-for-uninstallation/docs/INSTALLATION.md#deactivating--deleting).
+The theme works fine in my HumHub installation, but I have not tested all possible settings and available modules.
+That's why I recommend you to test the module with your settings, modules etc. and/or look through my code before activating it on a production site.
 
 Please give me some feedback how it works for you.
 

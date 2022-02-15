@@ -9,7 +9,7 @@ This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-m
 **Author:** Felix Hahn, info@hahn-felix.de - self-learned
 
 ## State of development
-The theme works fine in my HumHub installation, but I have not tested all possible settings and available modules.
+The theme works fine in my HumHub installations, but I have not tested all possible settings and available modules.
 That's why I recommend you to test the module with your settings, modules etc. and/or look through my code before activating it on a production site.
 
 Please give me some feedback how it works for you.

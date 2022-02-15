@@ -6,7 +6,7 @@
 
 This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-module), the changes compared to the community theme are listed below.
 
-**Author:** Felix Hahn, info@hahn-felix.de - self-learned, hobbyist
+**Author:** Felix Hahn, info@hahn-felix.de - self-learned
 
 ## State of development
 The theme works fine in my HumHub installation, but I have not tested all possible settings and available modules.

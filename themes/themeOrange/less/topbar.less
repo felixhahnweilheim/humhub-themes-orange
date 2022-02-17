@@ -1,4 +1,4 @@
-//Hover effect
+// Hover effect
 #topbar-first .btn-group > a:hover {
   background-color: darken(@custom-topbar-background, 10%)
 }
@@ -99,6 +99,9 @@
     	}
 	
 	.account .user-title {
+		// Allow title up to 100 characters showing correctly in top bar, using "..."
+		max-width: 450px; white-space: nowrap; overflow: hidden;  text-overflow: ellipsis;
+		
 		color: lighten(@text-color-highlight, 15%);
 		
 		span {
@@ -113,8 +116,16 @@
    	}
 }
 
+// Allow title up to 100 characters showing correctly in top bar, using "..." for tablets
+@media (max-width: 1199px) and (min-width: 992px) {
+	#topbar-first .account .user-title {max-width: 360px;}
+}
+@media (max-width: 991px) and (min-width: 767px) {
+	#topbar-first .account .user-title {max-width: 250px;}
+}
+
 #topbar-second {
-	    background-color: #fff;
+	background-color: #fff;
     	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     	-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);

@@ -7,7 +7,7 @@
 	],
 	"version": "0.1.0",
 	"humhub": {
-		"minVersion": "1.11"
+		"minVersion": "1.10"
 	},
 	"screenshots": ["resources/screenshot-header-desktop.png", "screenshot-space-topic-list.png", "resources/screenshot-social-controls-2.png", "resources/screenshot-space-header-buttons.png", "resources/screenshot-create-space-button.png", "resources/screenshot-people-buttons.png"]
 }

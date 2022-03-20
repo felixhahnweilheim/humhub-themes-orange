@@ -108,12 +108,13 @@ use humhub\modules\user\widgets\AuthChoice;
                     </div>
                 <?php endif; ?>
                 
-    <?= humhub\widgets\LanguageChooser::widget(); ?>
+                <div style="margin-top: 10px;>
+                    <?= humhub\widgets\LanguageChooser::widget(); ?>
+                </div>
+                
             </div>
         </div>
-
     </div>
-
 </div>
 
 <script <?= \humhub\libs\Html::nonce() ?>>

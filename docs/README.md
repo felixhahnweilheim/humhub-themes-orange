@@ -43,17 +43,14 @@ see `less/button.less`
 
 <img src="../resources/screenshot-people-buttons.png" width="400">
 
-### 6. Comment create form: fixed button over text
-see `less/mixins.less`, solved with padding-right
-
-### 7. Added Language Switcher in
+### 6. Added Language Switcher in
 - Login modal window, at the bottom
 - Registration page, beneath the title
 
-### 8. Editor for tasks, wiki, polls etc.: fixed non-floating menubar lead to a lot of scrolling on mobile
+### 7. Editor for tasks, wiki, polls etc.: fixed non-floating menubar lead to a lot of scrolling on mobile
 see `less/mixins.less` (solved with max-height)
 
-### 9. Full-width Dashboard for guests
+### 8. Full-width Dashboard for guests
 does not show the widgets "New People" and "New Spaces" in order not to show names and internal things to the public
 
-### 10. [Some smaller things ...](DETAILS.md)
+### 9. [Some smaller things ...](DETAILS.md)

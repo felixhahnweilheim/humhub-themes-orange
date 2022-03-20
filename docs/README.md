@@ -1,8 +1,8 @@
 # [HumHub](https://humhub.org) OrangeTheme
 
-### A child theme for HumHub 1.10+
+### A child theme for HumHub 1.11
 
-**Version:** 0.1.0
+**Version:** 0.1.1
 
 This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-module), the changes compared to the community theme are listed below.
 

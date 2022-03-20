@@ -51,6 +51,6 @@ see `less/button.less`
 see `less/mixins.less` (solved with max-height)
 
 ### 8. Full-width Dashboard for guests
-does not show the widgets "New People" and "New Spaces" in order not to show names and internal things to the public
+does not show the widget "New Spaces" in order not to show internal things to the public
 
 ### 9. [Some smaller things ...](DETAILS.md)

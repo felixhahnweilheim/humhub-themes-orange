@@ -1,6 +1,9 @@
 .btn {
     border-radius: 20px;
 }
+.comment-buttons .btn {
+    border-radius: 3px;
+}
 
 .wall-entry-content .btn.btn-default:hover, .wall-entry-content .btn.btn-default:focus {
     color: @info !important;
@@ -10,9 +13,12 @@
 }
 
 .btn-default {
+    background: @background-color-secondary
+}
+.btn-default {
     &:hover,
     &:focus {
-      background: lighten(@default, 2%);
+      background: @background3;
     }
 }
 

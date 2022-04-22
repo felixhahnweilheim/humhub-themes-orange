@@ -22,7 +22,6 @@ use humhub\widgets\PoweredBy;
         <meta name="format-detection" content="telephone=no"/>
 
         <title><?php echo Html::encode(Yii::$app->name); ?></title>
-        <link href=<?= Yii::$app->view->theme->variable('mail-font-url', 'http://fonts.googleapis.com/css?family=Open+Sans:300,100,400,600') ?> rel='stylesheet' type='text/css'>
             <style type="text/css">
 
                 <?php $defaultBackground =  Yii::$app->view->theme->variable('background-color-main', '#fff') ?>

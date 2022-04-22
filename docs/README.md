@@ -1,8 +1,10 @@
 # [HumHub](https://humhub.org) OrangeTheme
 
-### A child theme for HumHub 1.10+
+### A child theme for HumHub 1.10 and 1.11
 
-**Version:** 0.1.0
+**Version: 0.2.0 (for HumHub 1.11)**
+
+[Version 0.1.0](https://github.com/felixhahnweilheim/humhub-themes-orange/releases/tag/v0.1.0) was created for HumHub 1.10.
 
 This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-module), the changes compared to the community theme are listed below.
 
@@ -43,17 +45,14 @@ see `less/button.less`
 
 <img src="../resources/screenshot-people-buttons.png" width="400">
 
-### 6. Comment create form: fixed button over text
-see `less/mixins.less`, solved with padding-right
-
-### 7. Added Language Switcher in
+### 6. Added Language Switcher in
 - Login modal window, at the bottom
 - Registration page, beneath the title
 
-### 8. Editor for tasks, wiki, polls etc.: fixed non-floating menubar lead to a lot of scrolling on mobile
+### 7. Editor for tasks, wiki, polls etc.: fixed non-floating menubar lead to a lot of scrolling on mobile
 see `less/mixins.less` (solved with max-height)
 
-### 9. Full-width Dashboard for guests
-does not show the widgets "New People" and "New Spaces" in order not to show names and internal things to the public
+### 8. Full-width Dashboard for guests
+does not show the widget "New Spaces" in order not to show internal things to the public
 
-### 10. [Some smaller things ...](DETAILS.md)
+### 9. [Some smaller things ...](DETAILS.md)

@@ -23,7 +23,7 @@ use yii\base\Exception;
  *    * @author Luke
  *     * @since 0.5
  *      */
-class TopicList extends LeftNavigation
+class TopicListSpace extends LeftNavigation
 {
 
     /** @var Space */

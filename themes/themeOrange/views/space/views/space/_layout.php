@@ -8,7 +8,7 @@ use humhub\modules\space\widgets\Menu;
 use humhub\modules\space\widgets\SpaceContent;
 use humhub\widgets\FooterMenu;
 
-use humhub\modules\themeOrange\widgets\TopicList;
+use humhub\modules\themeOrange\widgets\TopicListSpace;
 
 /**
  * @var \humhub\modules\space\models\Space $space
@@ -29,9 +29,9 @@ $space = $context->contentContainer;
     <div class="row space-content">
         <div class="col-md-2 layout-nav-container">
             <?= Menu::widget(['space' => $space]); ?>
-	    <?php /**if (in_array($this, getEnabledContentContainers(), false)):**/ ?>
-		<?= TopicList::widget(['space' => $space]); ?>
-	    <?php /**endif; **/?>
+	    
+	    <?= TopicListSpace::widget(['space' => $space]); ?>
+	    
         </div>
         <div class="col-md-<?= ($this->hasSidebar()) ? '7' : '10' ?> layout-content-container">
             <?= SpaceContent::widget(['contentContainer' => $space, 'content' => $content]) ?>

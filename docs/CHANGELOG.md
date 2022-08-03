@@ -1,4 +1,4 @@
-## 0.2.1 (not released)
+## 0.3.0 (not released)
 - add Topic List to user profile
 - improve colours in Gallery Module
 

@@ -49,6 +49,7 @@ see `less/button.less`
 ### 6. Added Language Switcher in
 - Login modal window, at the bottom
 - Registration page, beneath the title
+- dashboard for guests
 
 ### 7. Editor for tasks, wiki, polls etc.: fixed non-floating menubar lead to a lot of scrolling on mobile
 see `less/mixins.less` (solved with max-height)

@@ -54,7 +54,8 @@ see `less/button.less`
 ### 7. Editor for tasks, wiki, polls etc.: fixed non-floating menubar lead to a lot of scrolling on mobile
 see `less/mixins.less` (solved with max-height)
 
-### 8. Full-width Dashboard for guests
+### 8. Modified Dashboard for guests
 does not show the widget "New Spaces" in order not to show internal things to the public
+shows the language switcher
 
 ### 9. [Some smaller things ...](DETAILS.md)

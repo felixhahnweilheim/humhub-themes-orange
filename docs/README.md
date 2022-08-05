@@ -1,10 +1,10 @@
 # [HumHub](https://humhub.org) OrangeTheme
 
-### A child theme for HumHub 1.10 and 1.11
+### A child theme for HumHub (for HumHub 1.11 and 1.12)
 
-**Version: 0.2.0 (for HumHub 1.11)**
+**Version: 0.3.0**
 
-[Version 0.1.0](https://github.com/felixhahnweilheim/humhub-themes-orange/releases/tag/v0.1.0) was created for HumHub 1.10.
+[Version 0.1](https://github.com/felixhahnweilheim/humhub-themes-orange/releases/tag/v0.1.0) was created for HumHub 1.10.
 
 This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-module), the changes compared to the community theme are listed below.
 
@@ -17,7 +17,7 @@ That's why I recommend you to test the module with your settings, modules etc. a
 Please give me some feedback how it works for you.
 
 ## Changes in comparison to the community theme
-### 1. Topic list in spaces
+### 1. Topic list in spaces and profiles
 **Thanks to @raphaeljolivet** (see https://github.com/humhub/humhub/pull/4785) I was able to add a topic list to the left sidebar of spaces (only shown if there is at least one topic)
 
 <img src="../resources/screenshot-space-topic-list.png" width="700">
@@ -48,11 +48,13 @@ see `less/button.less`
 ### 6. Added Language Switcher in
 - Login modal window, at the bottom
 - Registration page, beneath the title
+- dashboard for guests
 
 ### 7. Editor for tasks, wiki, polls etc.: fixed non-floating menubar lead to a lot of scrolling on mobile
 see `less/mixins.less` (solved with max-height)
 
-### 8. Full-width Dashboard for guests
+### 8. Modified Dashboard for guests
 does not show the widget "New Spaces" in order not to show internal things to the public
+shows the language switcher
 
 ### 9. [Some smaller things ...](DETAILS.md)

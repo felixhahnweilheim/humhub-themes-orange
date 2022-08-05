@@ -1,4 +1,9 @@
-## 0.2.0
+## 0.3.0 (not released)
+- add Topic List to user profile
+- improve colours in Gallery Module
+- add Language Chooser to guest dashboard
+
+## 0.2.0 (April 22, 2022)
 - Tested with HumHub v1.11
 - [#6](https://github.com/felixhahnweilheim/humhub-themes-orange/pull/6) Showing long title (> 50 characters) with overflow in top bar
 - removed Google font from e-mails

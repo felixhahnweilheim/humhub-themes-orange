@@ -4,11 +4,15 @@
             background-color: @text-color-soft2;
         }
         .panel-heading {
-            a {
-                color: @info;
+            a:not(.backgroundSuccess) {
+                color: @text-color-highlight !important;
             }
-            a:hover {
-                color: @info;
+        }
+        .nav-pills.preferences {
+                top: 0;
+
+                .dropdown .dropdown-toggle i {
+                    color: #fff;
             }
         }
     }

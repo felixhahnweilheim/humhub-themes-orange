@@ -1,13 +1,13 @@
 {
 	"id": "theme-orange",
 	"name": "Orange Theme",
-	"description": "A very simple, light theme for HumHub 1.10+",
+	"description": "A very simple, light theme for HumHub",
 	"keywords": [
 		"child theme", "orange"
 	],
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"humhub": {
-		"minVersion": "1.10"
+		"minVersion": "1.11"
 	},
 	"screenshots": ["resources/screenshot-header-desktop.png", "screenshot-space-topic-list.png", "resources/screenshot-social-controls-2.png", "resources/screenshot-space-header-buttons.png", "resources/screenshot-create-space-button.png", "resources/screenshot-people-buttons.png"]
 }

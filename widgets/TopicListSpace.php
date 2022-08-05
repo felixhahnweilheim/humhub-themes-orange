@@ -17,36 +17,25 @@ use humhub\modules\ui\menu\widgets\LeftNavigation;
 use Yii;
 use yii\base\Exception;
 
-/*
- *  * The Main Navigation for a space. It includes the Modules the Stream
- *   *
- *    * @author Luke
- *     * @since 0.5
- *      */
-class TopicList extends LeftNavigation
+class TopicListSpace extends LeftNavigation
 {
 
     /** @var Space */
     public $space;
 
     /** @var Space */
-    public $id = 'space-main-menu';
+    public $id = 'space-topic-menu';
 
-public $contentContainer;
+    public $contentContainer;
 
     /**
- *      * @inheritdoc
- *           */
+    * @inheritdoc
+    */
     public function init()
     {
         if (!$this->space) {
             $this->space = ContentContainerHelper::getCurrent(Space::class);
         }
-
-
-/**	if ($this->space->moduleManager->isEnabled($this->id)){ **/
-/*	if ($this->space->moduleManager->isEnabled('topiclist')) {
- */
 
         $this->panelTitle = "<b>" . Yii::t('TopicModule.base', 'Topics') . "</b>";
         $topics = Topic::findByContainer($this->space)->all();
@@ -62,7 +51,5 @@ public $contentContainer;
          }
 
         parent::init();
-	/*}*/
     }
-
 }

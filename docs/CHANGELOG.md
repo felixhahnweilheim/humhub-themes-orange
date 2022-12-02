@@ -1,3 +1,6 @@
+## 0.4.0 (unreleased)
+- make "Show all comments" link more visible
+
 ## 0.3.0 (August 5, 2022)
 - add Topic List to user profile
 - improve colours in Gallery Module

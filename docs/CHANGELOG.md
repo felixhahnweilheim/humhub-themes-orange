@@ -1,5 +1,6 @@
 ## 0.4.0 (unreleased)
 - make "Show all comments" link more visible
+- Display issue left border from divider of dropdown menu (see HumHub issue #5953, version 1.13.0-beta.2)
 
 ## 0.3.0 (August 5, 2022)
 - add Topic List to user profile

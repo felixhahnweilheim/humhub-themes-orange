@@ -2,9 +2,11 @@
 
 ### A child theme for HumHub
 
-**Version: 0.3.0**
+**Version: 0.4.0**
 
 Corresponding versions (espacially for the CSS file):
+
+[v0.4](https://github.com/felixhahnweilheim/humhub-themes-orange/releases/tag/v0.4.0) => HumHub 1.13
 
 [v0.3](https://github.com/felixhahnweilheim/humhub-themes-orange/releases/tag/v0.3.0) => HumHub 1.12
 

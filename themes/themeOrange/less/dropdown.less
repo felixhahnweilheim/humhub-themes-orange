@@ -1,0 +1,26 @@
+// Navigation dropdown
+
+.nav-pills,
+.nav-tabs,
+.account  {
+	.dropdown-menu {
+		background-color: @background-color-main;
+		
+		li.divider {
+            		background-color: darken(@background-color-main, 10%);
+        	}
+		
+		li {
+			border-left: 3px solid darken(@background-color-main, 3%);
+			a {
+                		color: @text-color-highlight;
+            		}
+          	}
+		
+		li:hover:not(.divider),
+		li.selected {
+			border-left: 3px solid @info;
+			background-color: darken(@background-color-main, 10%) !important;
+        	}
+   	}
+}

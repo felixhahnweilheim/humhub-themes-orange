@@ -39,7 +39,7 @@ class TopicListUser extends LeftNavigation
             $this->addEntry(new MenuLink([
                 'label' => $topic->name,
                 'url' => $topic->getUrl(),
-                'icon' => 'fa-tag',
+                'icon' => 'fa-star',
                 'sortOrder' => $topic->sort_order,
             ]));
         }

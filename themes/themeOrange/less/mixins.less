@@ -1,7 +1,7 @@
 /*Styles for internal things*/
 @import "topbar.less";
 @import "login.less";
-@import "nav.less";
+@import "dropdown.less";
 @import "button.less";
 /*Styles for external modules*/
 @import "gallery.less";
@@ -47,6 +47,15 @@ body {
     overflow-y: auto;
 }
 
+/* "Show all Comments" link*/
+.wall-entry .well .comment .show-all-link {
+    font-size: 14px;
+    color: @link;
+    font-weight: 500;
+}
+.wall-entry .well .comment .show-all-link:hover {
+    color: @primary;
+}
 
 /*Styling for Comment and Like icons*/
 .wall-entry-controls .likeLinkContainer a {

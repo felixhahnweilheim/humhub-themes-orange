@@ -1,8 +1,10 @@
 ## 0.4.0 (unreleased)
+- updated for HumHub 1.13
 - make "Show all comments" link more visible
-- Display issue left border from divider of dropdown menu (see HumHub issue #5953, version 1.13.0-beta.2)
+- Rework dropdown stylings (and rename nav.less to dropdown.less)
 
 ## 0.3.0 (August 5, 2022)
+- tested with HumHub 1.12
 - add Topic List to user profile
 - improve colours in Gallery Module
 - add Language Chooser to guest dashboard

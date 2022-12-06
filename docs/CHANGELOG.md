@@ -1,4 +1,4 @@
-## 0.4.0 (unreleased)
+## 0.4.0 (December 6, 2022)
 - updated for HumHub 1.13
 - make "Show all comments" link more visible
 - Rework dropdown stylings (and rename nav.less to dropdown.less)

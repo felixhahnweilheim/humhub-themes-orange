@@ -2,7 +2,7 @@
 
 ### A child theme for HumHub
 
-**Version: 0.4.0**
+**Version: 0.4.1**
 
 Corresponding versions (espacially for the CSS file):
 

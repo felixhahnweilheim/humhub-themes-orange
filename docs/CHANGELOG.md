@@ -1,3 +1,6 @@
+## 0.4.1 (December 10, 2022)
+- mobile: wrap menus to prevent horizontal scrolling (new: mobile.less)
+
 ## 0.4.0 (December 6, 2022)
 - updated for HumHub 1.13
 - make "Show all comments" link more visible

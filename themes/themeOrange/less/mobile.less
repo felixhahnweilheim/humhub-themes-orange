@@ -1,0 +1,15 @@
+// The mobile design will load when screen is less then 768px
+@smallScreen: ~"only screen and (max-width : 768px)";
+@tinyScreen: ~"only screen and (max-width : 399px)";
+
+@media @smallScreen {
+  // Layout Contents: Adjusting the contents to fit perfectly on mobile devices
+  #layout-content {
+    // Space navigation, make menu wrap, avoid scrolling horizontally
+    .left-navigation {
+      .list-group {
+        white-space: normal;
+      }
+    }
+  }
+}

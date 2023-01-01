@@ -23,9 +23,9 @@ $commentCountSpan = Html::tag('span', ' (' . $commentCount . ')', [
     'style' => ($hasComments) ? null : 'display:none'
 ]);
 
-$label = HTML::tag('i', '', ['class' => 'fa fa-comment-o']);
-	/*($isNestedComment) ? Yii::t('CommentModule.base', "Reply") : Yii::t('CommentModule.base', "Comment");
-	 */
+$title = Yii::t('CommentModule.base', "Comment");
+$label = HTML::tag('i', '', ['class' => 'fa fa-comment-o', 'title' => $title]);
+
 ?>
 <?php if ($mode == CommentLink::MODE_POPUP): ?>
     <?php $url = Url::to(['/comment/comment/show', 'objectModel' => $objectModel, 'objectId' => $objectId, 'mode' => 'popup']); ?>

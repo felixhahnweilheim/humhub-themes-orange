@@ -26,8 +26,7 @@ $commentCountSpan = Html::tag('span', ' (' . $commentCount . ')', [
 $title = Yii::t('CommentModule.base', "Comment");
 $label = HTML::tag('i', '', ['class' => 'fa fa-comment-o', 'title' => $title]);
 
-?>
-<?php if ($mode == CommentLink::MODE_POPUP): ?>
+if ($mode == CommentLink::MODE_POPUP): ?>
     <?php $url = Url::to(['/comment/comment/show', 'objectModel' => $objectModel, 'objectId' => $objectId, 'mode' => 'popup']); ?>
     <a href="#" data-action-click="ui.modal.load" data-action-url="<?= $url ?>">
 	<?= $label . ' (' . $commentCount . ')' ?>

@@ -1,3 +1,8 @@
+## under development
+- auto-activate theme after module activation (and select community theme after deactivation)
+- add html title to comment and like icons
+- Wiki: adjust distance of comment and like icons
+
 ## 0.4.1 (December 10, 2022)
 - mobile: wrap menus to prevent horizontal scrolling (new: mobile.less)
 

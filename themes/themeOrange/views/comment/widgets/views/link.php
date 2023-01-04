@@ -6,6 +6,8 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use \humhub\modules\comment\models\Comment;
 
+use \humhub\modules\themeOrange\Module;
+
 /* @var $this \humhub\modules\ui\view\components\View */
 /* @var $objectModel string */
 /* @var $objectId integer */

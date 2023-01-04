@@ -3,6 +3,7 @@
 namespace humhub\modules\themeOrange;
 
 use humhub\modules\ui\view\helpers\ThemeHelper;
+use Yii;
 
 class Module extends \humhub\components\Module
 {

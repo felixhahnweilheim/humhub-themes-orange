@@ -20,7 +20,9 @@ Please give me some feedback how it works for you.
 
 <img src="../resources/screenshot-space-topic-list.png" width="700">
 
-### 2. Comment and like icons instead of text
+### 2. Comment and like icons instead of text (optional)
+
+You can decide to show icons instead of the text, both or only the text, see [configuration](CONFIG.md).
 
 <img src="../resources/screenshot-social-controls-2.png" width="200">
 

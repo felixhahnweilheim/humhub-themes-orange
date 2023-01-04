@@ -23,8 +23,23 @@ $commentCountSpan = Html::tag('span', ' (' . $commentCount . ')', [
     'style' => ($hasComments) ? null : 'display:none'
 ]);
 
-/*Icons instead of text - text as html title*/
-$label = ($isNestedComment) ? HTML::tag('i', '', ['class' => 'fa fa-comment-o', 'title' => Yii::t('CommentModule.base', "Reply")]) : HTML::tag('i', '', ['class' => 'fa fa-comment-o', 'title' => Yii::t('CommentModule.base', "Comment")]);
+/*Html tags*/
+$commentIcon = HTML::tag('i', '', ['class' => 'fa fa-comment-o', 'title' => Yii::t('CommentModule.base', "Comment")]);
+$replyIcon = HTML::tag('i', '', ['class' => 'fa fa-comment-o', 'title' => Yii::t('CommentModule.base', "Reply")]);
+$commentLabel = HTML::tag('span', Yii::t('CommentModule.base', "Comment"), ['class' => 'comment-label']);
+$replyLabel = HTML::tag('span', Yii::t('CommentModule.base', "Reply"), ['class' => 'reply-label']);
+
+/*Label based on settings*/
+if (Module::getCommentLinkSetting() == 'icon') {
+    /*Icons instead of text - text as html title*/
+    $label = ($isNestedComment) ? $replyIcon : $commentIcon;
+} elseif (Module::getCommentLinkSetting() == 'both') {
+	/*Icons and text*/
+    $label = ($isNestedComment) ? $replyIcon . $replyLabel : $commentIcon . $commentLabel;
+} else {
+	/*Only text*/
+	$label = ($isNestedComment) ? $replyLabel : $commentLabel;
+}
 
 if ($mode == CommentLink::MODE_POPUP): ?>
     <?php $url = Url::to(['/comment/comment/show', 'objectModel' => $objectModel, 'objectId' => $objectId, 'mode' => 'popup']); ?>

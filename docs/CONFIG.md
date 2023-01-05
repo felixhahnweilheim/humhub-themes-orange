@@ -1,16 +1,16 @@
 # Configuration options
 ## Comment and Like Link
 **commentLink**  
-Options: icon, text, both  
-Default: icon
+Options: `icon`, `text`, `both`  
+Default: `icon`
 
 **likeLink**  
-Options: icon, text, both  
-Default: icon
+Options: `icon`, `text`, `both`  
+Default: `icon`
 
 **likeIcon**  
-Options: heart, star, thumbsup  
-Default: heart
+Options: `heart`, `star`, `thumbsup`  
+Default: `heart`
 
 
 

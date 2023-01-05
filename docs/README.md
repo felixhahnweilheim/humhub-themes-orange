@@ -23,6 +23,7 @@ Please give me some feedback how it works for you.
 ### 2. Comment and like icons instead of text (optional)
 
 You can decide to show icons instead of the text, both or only the text, see [configuration](CONFIG.md).
+As like icon you can choose between heart, star and thumbs up.
 
 <img src="../resources/screenshot-social-controls-2.png" width="200">
 

@@ -45,7 +45,7 @@ if (Module::getLikeLinkSetting() == 'text') {
 			<?php elseif (Module::getLikeLinkSetting() == 'text'): ?>
 			    <?= Yii::t('LikeModule.base', 'Like'); ?>
 			<?php elseif (Module::getLikeLinkSetting() == 'both'): ?>
-			    <?= $iconEmpty . HTML::tag('span', Yii::t('LikeModule.base', 'Like'), ['class' => 'like-label']); ?>
+			    <?= $iconEmpty . HTML::tag('span', Yii::t('LikeModule.base', 'Like'), ['class' => 'like-label-both']); ?>
 			<?php endif; ?>
 			
         </a>
@@ -57,7 +57,7 @@ if (Module::getLikeLinkSetting() == 'text') {
 			<?php elseif (Module::getLikeLinkSetting() == 'text'): ?>
 			    <?= Yii::t('LikeModule.base', 'Unlike'); ?>
 			<?php elseif (Module::getLikeLinkSetting() == 'both'): ?>
-			    <?= $iconFull . HTML::tag('span', Yii::t('LikeModule.base', 'Unlike'), ['class' => 'unlike-label']); ?>
+			    <?= $iconFull . HTML::tag('span', Yii::t('LikeModule.base', 'Unlike'), ['class' => 'unlike-label-both']); ?>
 			<?php endif; ?>
 			
         </a>

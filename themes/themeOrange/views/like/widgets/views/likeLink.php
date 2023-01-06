@@ -27,13 +27,13 @@ if (Module::getLikeIcon() == 'heart') {
 }
 ?>
 
-<span class="likeLinkContainer" id="likeLinkContainer_<?= $id ?>">
+<span class="likeLinkContainer <?= $iconContainerClass ?>" id="likeLinkContainer_<?= $id ?>">
 
     <?php if (Yii::$app->user->isGuest): ?>
 
         <?= Html::a(Yii::t('LikeModule.base', 'Like'), Yii::$app->user->loginUrl, ['data-target' => '#globalModal']); ?>
     <?php else: ?>
-        <a href="#" data-action-click="like.toggleLike" data-action-url="<?= $likeUrl ?>" class="like likeAnchor<?= !$canLike ? ' disabled' : '' ?> <?= $iconContainerClass ?>" style="<?= (!$currentUserLiked) ? '' : 'display:none'?>" title="<?= Yii::t('LikeModule.base', 'Like') ?>">
+        <a href="#" data-action-click="like.toggleLike" data-action-url="<?= $likeUrl ?>" class="like likeAnchor<?= !$canLike ? ' disabled' : '' ?>" style="<?= (!$currentUserLiked) ? '' : 'display:none'?>" title="<?= Yii::t('LikeModule.base', 'Like') ?>">
 			
 			<?php /*Conditions not liked yet*/
 	        if (Module::getLikeLinkSetting() == 'icon'): ?>
@@ -45,7 +45,7 @@ if (Module::getLikeIcon() == 'heart') {
 			<?php endif; ?>
 			
         </a>
-        <a href="#" data-action-click="like.toggleLike" data-action-url="<?= $unlikeUrl ?>" class="unlike likeAnchor<?= !$canLike ? ' disabled' : '' ?> <?= $iconContainerClass ?>" style="<?= ($currentUserLiked) ? '' : 'display:none'?>" title="<?= Yii::t('LikeModule.base', 'Unlike') ?>">
+        <a href="#" data-action-click="like.toggleLike" data-action-url="<?= $unlikeUrl ?>" class="unlike likeAnchor<?= !$canLike ? ' disabled' : '' ?>" style="<?= ($currentUserLiked) ? '' : 'display:none'?>" title="<?= Yii::t('LikeModule.base', 'Unlike') ?>">
 			
 			<?php /*Conditions already liked*/
 	        if (Module::getLikeLinkSetting() == 'icon'): ?>

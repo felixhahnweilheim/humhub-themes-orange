@@ -25,6 +25,10 @@ if (Module::getLikeIcon() == 'heart') {
 	$iconEmpty = $thumbsup;
 	$iconFull = $thumbsupFull;
 }
+
+if (Module::getLikeLinkSetting() == 'text') {
+	$iconContainerClass = '';
+}
 ?>
 
 <span class="likeLinkContainer <?= $iconContainerClass ?>" id="likeLinkContainer_<?= $id ?>">

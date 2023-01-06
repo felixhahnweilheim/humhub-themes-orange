@@ -27,7 +27,7 @@ if (Module::getLikeIcon() == 'heart') {
 }
 
 if (Module::getLikeLinkSetting() == 'text') {
-	$iconContainerClass = '';
+	$iconContainerClass = 'no-icon';
 }
 ?>
 

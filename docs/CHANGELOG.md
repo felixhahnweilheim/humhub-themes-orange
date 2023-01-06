@@ -1,8 +1,9 @@
 ## 0.5.0 (under development)
-- Enh: Make comment link configurable (see added CONFIG.md for explanation)
-- Enh: auto-activate theme after module activation (and select community theme after deactivation)
+- Enh: Make comment link and like link configurable (see added CONFIG.md for explanation)
 - Enh: add html title to comment and like icons
+- Enh: auto-activate theme after module activation (and select community theme after deactivation)
 - Enh: Wiki: adjust distance of comment and like icons
+- Fix: add missing icon and image folder
 
 ## 0.4.1 (December 10, 2022)
 - mobile: wrap menus to prevent horizontal scrolling (new: mobile.less)

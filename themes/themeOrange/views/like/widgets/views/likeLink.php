@@ -41,7 +41,7 @@ if (Module::getLikeIcon() == 'heart') {
 			<?php elseif (Module::getLikeLinkSetting() == 'text'): ?>
 			    <?= Yii::t('LikeModule.base', 'Like'); ?>
 			<?php elseif (Module::getLikeLinkSetting() == 'both'): ?>
-			    <?= $iconEmpty . HTML::tag('span', Yii::t('LikeModule.base', 'Like'), ['class' => 'LikeLabel']); ?>
+			    <?= $iconEmpty . HTML::tag('span', Yii::t('LikeModule.base', 'Like'), ['class' => 'like-label']); ?>
 			<?php endif; ?>
 			
         </a>
@@ -53,7 +53,7 @@ if (Module::getLikeIcon() == 'heart') {
 			<?php elseif (Module::getLikeLinkSetting() == 'text'): ?>
 			    <?= Yii::t('LikeModule.base', 'Unlike'); ?>
 			<?php elseif (Module::getLikeLinkSetting() == 'both'): ?>
-			    <?= $iconFull . HTML::tag('span', Yii::t('LikeModule.base', 'Unlike'), ['class' => 'UnlikeLabel']); ?>
+			    <?= $iconFull . HTML::tag('span', Yii::t('LikeModule.base', 'Unlike'), ['class' => 'unlike-label']); ?>
 			<?php endif; ?>
 			
         </a>

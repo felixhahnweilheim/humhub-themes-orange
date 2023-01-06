@@ -30,6 +30,8 @@ $commentIcon = HTML::tag('i', '', ['class' => 'fa fa-comment-o', 'title' => Yii:
 $replyIcon = HTML::tag('i', '', ['class' => 'fa fa-comment-o', 'title' => Yii::t('CommentModule.base', "Reply")]);
 $commentLabel = HTML::tag('span', Yii::t('CommentModule.base', "Comment"), ['class' => 'comment-label']);
 $replyLabel = HTML::tag('span', Yii::t('CommentModule.base', "Reply"), ['class' => 'reply-label']);
+$commentLabelBoth  = HTML::tag('span', Yii::t('CommentModule.base', "Comment"), ['class' => 'comment-label-both']);
+$replyLabelBoth = HTML::tag('span', Yii::t('CommentModule.base', "Reply"), ['class' => 'reply-label-both']);
 
 /*Label based on settings*/
 if (Module::getCommentLinkSetting() == 'icon') {
@@ -37,7 +39,7 @@ if (Module::getCommentLinkSetting() == 'icon') {
     $label = ($isNestedComment) ? $replyIcon : $commentIcon;
 } elseif (Module::getCommentLinkSetting() == 'both') {
 	/*Icons and text*/
-    $label = ($isNestedComment) ? $replyIcon . $replyLabel : $commentIcon . $commentLabel;
+    $label = ($isNestedComment) ? $replyIcon . $replyLabelBoth : $commentIcon . $commentLabelBoth;
 } else {
 	/*Only text*/
 	$label = ($isNestedComment) ? $replyLabel : $commentLabel;

@@ -5,11 +5,11 @@
 @import "button.less";
 @import "mobile.less";
 /*Styles for external modules*/
-@import "modules/gallery.less";
-@import "modules/scrollup.less";
-@import "modules/legal.less";
-@import "modules/tasks.less";
-@import "modules/wiki.less";
+@import "gallery.less";
+@import "scrollup.less";
+@import "legal.less";
+@import "tasks.less";
+@import "wiki.less";
 
 /*General styling*/
 
@@ -59,8 +59,11 @@ body {
 }
 
 /*Styling for Comment and Like icons*/
-.wall-entry-controls .likeLinkContainer a {
+.wall-entry-controls .heartContainer a {
 	color: @heart-color !important;
+}
+.wall-entry-controls .starContainer a {
+	color: @star-color !important;
 }
 .wall-entry-controls, .wall-entry-controls i {
 	font-size: 16px;
@@ -91,8 +94,11 @@ body {
 }
 
 /*Hover*/
-.wall-entry-controls .likeLinkContainer a:hover i {
+.wall-entry-controls .heartContainer a:hover i {
 	text-shadow:0 0 2px lighten(@heart-color, 10%);
+}
+.wall-entry-controls .starContainer a:hover i {
+	text-shadow:0 0 2px lighten(@star-color, 10%);
 }
 .wall-entry-controls > a:nth-child(-n+2):hover i {
 	text-shadow:0 0 2px lighten(@link, 10%);

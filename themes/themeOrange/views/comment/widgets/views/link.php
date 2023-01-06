@@ -18,9 +18,15 @@ use \humhub\modules\themeOrange\Module;
 /* @var $comment \humhub\modules\comment\models\Comment */
 /* @var $module \humhub\modules\comment\Module */
 
+if (Module::getCommentLinkSetting() == 'text') {
+	$additonalClass = 'no-icon';
+} else {
+	$additonalClass = '';
+}
+
 $hasComments = ($commentCount > 0);
 $commentCountSpan = Html::tag('span', ' (' . $commentCount . ')', [
-    'class' => 'comment-count',
+    'class' => 'comment-count ' . $additonalClass,
     'data-count' => $commentCount,
     'style' => ($hasComments) ? null : 'display:none'
 ]);

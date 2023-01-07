@@ -8,7 +8,7 @@ humhub\modules\like\assets\LikeAsset::register($this);
 $heart = '<i class="fa fa-heart-o"></i>';
 $heartFull = '<i class="fa fa-heart"></i>';
 $thumbsup = '<i class="fa fa-thumbs-o-up"></i>';
-$thumbsupFull = '<i class="fa fa-heart-o"></i>';
+$thumbsupFull = '<i class="fa fa-thumbs-up"></i>';
 $star = '<i class="fa fa-star-o"></i>';
 $starFull = '<i class="fa fa-star"></i>';
 

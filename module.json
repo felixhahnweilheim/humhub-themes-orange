@@ -1,13 +1,21 @@
 {
 	"id": "theme-orange",
+	"version": "0.5.0",
 	"name": "Orange Theme",
 	"description": "A very simple, light theme for HumHub",
-	"keywords": [
-		"child theme", "orange"
-	],
-	"version": "0.5.0",
 	"humhub": {
 		"minVersion": "1.13"
 	},
+	"keywords": [
+		"child theme", "orange"
+	],
 	"screenshots": ["resources/screenshot-header-desktop.png", "screenshot-space-topic-list.png", "resources/screenshot-social-controls-2.png", "resources/screenshot-space-header-buttons.png", "resources/screenshot-create-space-button.png", "resources/screenshot-people-buttons.png"]
+    "homepage": "https://github.com/felixhahnweilheim/humhub-themes-orange",
+	"authors": [
+        {
+            "name": "Felix Hahn",
+            "email": "info@hahn-felix.de",
+            "role": "Developer"
+        }
+    ]  
 }

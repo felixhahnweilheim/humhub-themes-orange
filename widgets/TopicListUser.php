@@ -2,25 +2,23 @@
 
 namespace humhub\modules\themeOrange\widgets;
 
-use humhub\modules\content\components\ContentContainerController;
 use humhub\modules\topic\models\Topic;
 use humhub\modules\content\helpers\ContentContainerHelper;
-use humhub\modules\user\models\User;
 use humhub\modules\ui\menu\MenuLink;
 use humhub\modules\ui\menu\widgets\LeftNavigation;
 use Yii;
-use yii\base\Exception;
 
 class TopicListUser extends LeftNavigation
 {
-
-    /** @var User */
+    /**
+     * @var User
+     */
     public $user;
 
-    /** @var Space */
+    /**
+     * @inheritdoc
+     */
     public $id = 'user-topic-menu';
-
-    public $contentContainer;
 
     /**
      * @inheritdoc

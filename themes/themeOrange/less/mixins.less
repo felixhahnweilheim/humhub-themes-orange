@@ -11,9 +11,9 @@
 @import "modules/tasks.less";
 @import "modules/wiki.less";
 
-/*General styling*/
-
-/*Add hover effects*/
+/*
+ * Hover effects
+ */
 .wall-entry-header-info, .wall-entry-content {
     a:hover {
         color: @info !important;
@@ -26,7 +26,9 @@
     color: @info !important;
 }
 
-/*Body Padding - distance between topbars and content, community theme: 130px / 120px / 105px*/
+/*
+ * Body Padding - distance between topbars and content, community theme: 130px / 120px / 105px
+ */
 @responsive: ~"only screen and (max-width : 768px)";
 body {
     padding-top: 114px;
@@ -42,13 +44,17 @@ body {
     }
 }
 
-/*Max-height for Editor in Wiki and Tasks module etc. - prevents scrolling to the editor menubar*/
+/*
+ * Editor in Wiki and Tasks module etc.: max-height to prevent scrolling to the editor menubar
+ */
 .ProsemirrorEditor.plainMenu .ProseMirror {
     max-height: 300px;
     overflow-y: auto;
 }
 
-/* "Show all Comments" link*/
+/*
+ * "Show all Comments" link
+ */
 .wall-entry .well .comment .show-all-link {
     font-size: 14px;
     color: @link;
@@ -60,18 +66,22 @@ body {
 }
 
 /*
- * Styling for Comment and Like links
-*/
+ * Wall Entry Controls, esp. comment and like links
+ */
 .wall-entry-controls {
     color: transparent;
     padding: 5px 10px 0px 0px;
+    line-height: 2;
 
+    /* colors for heart and star container */
     .heartContainer a {
 	color: @heart-color !important;
     }
     .starContainer a {
 	color: @star-color !important;
     }
+    
+    /* Font Sizes */
     i {
 	font-size: 16px;
     }
@@ -79,15 +89,12 @@ body {
 	font-size: 13px;
     }
 
-    /*
-     * Hover
-    */
+    /* Hover */
     .no-icon a, .comment-label, .reply-label, .comment-count.no-icon {
         &:hover {
             color: @primary !important;
         }
     }
-
     .heartContainer a:hover i {
 		text-shadow:0 0 2px lighten(@heart-color, 10%);
     }
@@ -104,7 +111,7 @@ body {
 		color: @primary !important;
     }
 }
-/*Smaller under comments*/
+/* Font-sizes under comments */
 .comment-container .wall-entry-controls {
     i {
         font-size: 14px;

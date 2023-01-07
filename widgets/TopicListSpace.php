@@ -10,7 +10,6 @@ use Yii;
 
 class TopicListSpace extends LeftNavigation
 {
-
     /**
      * @var Space
      */

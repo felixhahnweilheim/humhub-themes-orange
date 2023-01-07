@@ -12,16 +12,20 @@ class Module extends \humhub\components\Module
     */
     public $resourcesPath = 'resources';
 	
-    //Setting for comment link (options: icon, text, both)
+    /**
+	 * @var string defines the style of comment links (options: icon, text, both)
+	 */
 	public $commentLink = 'icon';
-	
-	//Settinng for like link (options: icon, text, both)
+
+    /**
+	 * @var string defines the style of like links (options: icon, text, both)
+	 */
 	public $likeLink = 'icon';
 	
-	//Setting for like icon (options: heart, thumbsup, star)
+    /**
+	 * @var string defines the like icon (options: heart, thumbsup, star)
+	 */
 	public $likeIcon = 'heart';
-	
-	public $theme;
 	
 	public static function getCommentLinkSetting() {
 		$module = Yii::$app->getModule('theme-orange');
@@ -38,6 +42,9 @@ class Module extends \humhub\components\Module
         return $module ? $module->likeIcon : 'heart';
 	}
 	
+	/**
+	 * @inheritdoc
+	 */
 	public function disable() {
     
 	    // Deselect theme (select community theme)

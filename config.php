@@ -6,7 +6,7 @@ use humhub\modules\themeOrange\Events;
 
 return [
     'id' => 'theme-orange',
-    'class' => 'humhub\modules\themeOrange\Module',
+    'class' => 'humhub\modules\themeOrange\Module::class',
     'namespace' => 'humhub\modules\themeOrange',
     'events' => [
 		[

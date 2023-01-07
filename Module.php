@@ -41,9 +41,11 @@ class Module extends \humhub\components\Module
 	public function disable() {
     
 	    // Deselect theme (select community theme)
-		$theme = ThemeHelper::getThemeByName('HumHub');
-		if ($theme !== null) {
-			$theme->activate();
+		if (Yii::$app->view->theme->name == 'themeOrange') {
+		    $theme = ThemeHelper::getThemeByName('HumHub');
+		    if ($theme !== null) {
+		    	$theme->activate();
+			}
 		}
 	
         parent::disable();

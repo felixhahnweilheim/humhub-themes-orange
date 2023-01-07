@@ -7,20 +7,16 @@ use yii\base\Model;
 use humhub\modules\ui\view\helpers\ThemeHelper;
 use yii\base\Theme;
 
-class Events {
-
-    public $theme;
-    
+class Events
+{
     /*
      * Callback after Module enabled
      * @param ModuleEvent $event
      */
-    public static function onModuleEnabled($event) {
-    
-        /*Select Orange Theme*/
-        $theme = ThemeHelper::getThemeByName('themeOrange');
-		    
+    public static function onModuleEnabled($event)
+    {
         /*Activate Orange Theme*/
+        $theme = ThemeHelper::getThemeByName('themeOrange');
         if ($theme !== null) {
             $theme->activate();
         }

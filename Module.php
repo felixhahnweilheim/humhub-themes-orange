@@ -28,18 +28,15 @@ class Module extends \humhub\components\Module
 	public $likeIcon = 'heart';
 	
 	public static function getCommentLinkSetting() {
-		$module = Yii::$app->getModule('theme-orange');
-        return $module ? $module->commentLink : 'icon';
+		return Yii::$app->getModule('theme-orange')->commentLink;
 	}
 	
 	public static function getLikeLinkSetting() {
-		$module = Yii::$app->getModule('theme-orange');
-        return $module ? $module->likeLink : 'icon';
+		return Yii::$app->getModule('theme-orange')->likeLink;
 	}
 	
 	public static function getLikeIcon() {
-		$module = Yii::$app->getModule('theme-orange');
-        return $module ? $module->likeIcon : 'heart';
+		return Yii::$app->getModule('theme-orange')->likeIcon;
 	}
 	
 	/**

@@ -89,16 +89,19 @@ body {
     }
 
     .heartContainer a:hover i {
-	text-shadow:0 0 2px lighten(@heart-color, 10%);
+		text-shadow:0 0 2px lighten(@heart-color, 10%);
     }
     .starContainer a:hover i {
-	text-shadow:0 0 2px lighten(@star-color, 10%);
+		text-shadow:0 0 2px lighten(@star-color, 10%);
+    }
+    .thumbsupContainer a:hover i {
+		text-shadow:0 0 2px lighten(@link, 10%);
     }
     &> a:nth-child(-n+2):hover i {
-	text-shadow:0 0 2px lighten(@link, 10%);
+		text-shadow:0 0 2px lighten(@link, 10%);
     }
     &> a:nth-child(n+3):hover {
-	color: @primary !important;
+		color: @primary !important;
     }
 }
 /*Smaller under comments*/
@@ -125,7 +128,7 @@ body {
         .entry {
             .count {
                  color: @info;
-	    }
+	    	}
         }
     }
 }

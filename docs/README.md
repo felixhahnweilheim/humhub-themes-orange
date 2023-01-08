@@ -26,7 +26,7 @@ As like icon you can choose between heart, star and thumbs up.
 
 <img src="../resources/screenshot-header-desktop.png" width="700">
 
-- bright dropdown menus (background same as topbar), text-color: @text-color-highlight instead of white
+- bright dropdown menus, text-color: @text-color-highlight instead of white
 - color changes in comparison to the HumHub Community theme are mentioned in the file `less/variables.less`
 
 #### Added hover effects

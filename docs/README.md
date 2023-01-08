@@ -8,24 +8,18 @@ This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-m
 
 **Author:** Felix Hahn, info@hahn-felix.de - self-learned
 
-## State of development
-The theme works fine in my HumHub installations, but I have not tested all possible settings and available modules.
-That's why I recommend you to test the module with your settings, modules etc. and/or look through my code before activating it on a production site.
-
-Please give me some feedback how it works for you.
-
 ## Changes in comparison to the community theme
-### 1. Topic list in spaces and profiles
-**Thanks to @raphaeljolivet** (see https://github.com/humhub/humhub/pull/4785) I was able to add a topic list to the left sidebar of spaces (only shown if there is at least one topic)
+### 1. Comment and like icons instead of text (configurable)
 
-<img src="../resources/screenshot-space-topic-list.png" width="700">
-
-### 2. Comment and like icons instead of text (optional)
-
-You can decide to show icons instead of the text, both or only the text, see [configuration](CONFIG.md).
+You can decide to show icons instead of the text, both or only the text, see [configuration](CONFIG.md).  
 As like icon you can choose between heart, star and thumbs up.
 
 <img src="../resources/screenshot-social-controls-2.png" width="200">
+
+### 2. Topic list in spaces and profiles
+**Thanks to @raphaeljolivet** (see https://github.com/humhub/humhub/pull/4785) I was able to add a topic list to the left sidebar of spaces (only shown if there is at least one topic)
+
+<img src="../resources/screenshot-space-topic-list.png" width="700">
 
 ### 3. Colors
 - bright topbar (added variable @custom-topbar-background and @custom-topbar-contrast)

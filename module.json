@@ -9,7 +9,7 @@
 	"keywords": [
 		"child theme", "orange"
 	],
-	"screenshots": ["resources/screenshot-header-desktop.png", "screenshot-space-topic-list.png", "resources/screenshot-social-controls-2.png", "resources/screenshot-space-header-buttons.png", "resources/screenshot-create-space-button.png", "resources/screenshot-people-buttons.png"]
+	"screenshots": ["resources/screenshot-header-desktop.png", "screenshot-space-topic-list.png", "resources/screenshot-social-controls-2.png", "resources/screenshot-space-header-buttons.png", "resources/screenshot-create-space-button.png", "resources/screenshot-people-buttons.png"],
     "homepage": "https://github.com/felixhahnweilheim/humhub-themes-orange",
 	"authors": [
         {

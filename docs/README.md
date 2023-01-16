@@ -28,6 +28,7 @@ As like icon you can choose between heart, star and thumbs up.
 
 - bright dropdown menus, text-color: @text-color-highlight instead of white
 - color changes in comparison to the HumHub Community theme are mentioned in the file `less/variables.less`
+- added color variables (e.g. color for like icons)
 
 #### Added hover effects
 - see `less/mixins.less` (added color variable @hover)
@@ -40,16 +41,11 @@ see `less/button.less`
 
 <img src="../resources/screenshot-people-buttons.png" width="400">
 
-### 6. Added Language Switcher in
+### 5. Added Language Switcher in
 - Login modal window, at the bottom
 - Registration page, beneath the title
 - dashboard for guests
 
-### 7. Editor for tasks, wiki, polls etc.: fixed non-floating menubar lead to a lot of scrolling on mobile
-see `less/mixins.less` (solved with max-height)
+### 6. Hide "New Spaces" widget from guest dashboar
 
-### 8. Modified Dashboard for guests
-does not show the widget "New Spaces" in order not to show internal things to the public
-shows the language switcher
-
-### 9. [Some smaller things ...](DETAILS.md)
+### 7. [Some smaller things ...](DETAILS.md)

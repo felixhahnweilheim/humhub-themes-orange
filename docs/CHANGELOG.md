@@ -1,3 +1,13 @@
+## 0.5.0 (January 16 2023)
+- Enh: make comment link and like link configurable (see added [CONFIG.md](CONFIG.md) for explanation)
+  - like icon: choose between heart, star & thumbs up (new color variable: star-color)
+- Enh: add html title to comment and like icons
+- Enh: auto-activate theme after module activation (and select community theme after deactivation)
+- Enh: Wiki: adjust distance of comment and like icons
+- Enh: improve hover of active buttons and of buttons in a dropdown menu
+- Enh: some code style improvements
+- Fix: add missing icon and image folder
+
 ## 0.4.1 (December 10, 2022)
 - mobile: wrap menus to prevent horizontal scrolling (new: mobile.less)
 

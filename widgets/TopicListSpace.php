@@ -1,32 +1,24 @@
 <?php
 
-/**
- * @link https://www.humhub.org/
- * @copyright Copyright (c) 2017 HumHub GmbH & Co. KG
- *  * @license https://www.humhub.com/licences
- *   */
-
 namespace humhub\modules\themeOrange\widgets;
 
-use humhub\modules\content\components\ContentContainerController;
 use humhub\modules\topic\models\Topic;
 use humhub\modules\content\helpers\ContentContainerHelper;
-use humhub\modules\space\models\Space;
 use humhub\modules\ui\menu\MenuLink;
 use humhub\modules\ui\menu\widgets\LeftNavigation;
 use Yii;
-use yii\base\Exception;
 
 class TopicListSpace extends LeftNavigation
 {
-
-    /** @var Space */
+    /**
+     * @var Space
+     */
     public $space;
 
-    /** @var Space */
+    /**
+     * @inheritdoc
+     */
     public $id = 'space-topic-menu';
-
-    public $contentContainer;
 
     /**
     * @inheritdoc

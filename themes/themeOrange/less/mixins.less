@@ -5,15 +5,15 @@
 @import "button.less";
 @import "mobile.less";
 /*Styles for external modules*/
-@import "gallery.less";
-@import "scrollup.less";
-@import "legal.less";
-@import "tasks.less";
-@import "wiki.less";
+@import "modules/gallery.less";
+@import "modules/scrollup.less";
+@import "modules/legal.less";
+@import "modules/tasks.less";
+@import "modules/wiki.less";
 
-/*General styling*/
-
-/*Add hover effects*/
+/*
+ * Hover effects
+ */
 .wall-entry-header-info, .wall-entry-content {
     a:hover {
         color: @info !important;
@@ -26,7 +26,9 @@
     color: @info !important;
 }
 
-/*Body Padding - distance between topbars and content, community theme: 130px / 120px / 105px*/
+/*
+ * Body Padding - distance between topbars and content, community theme: 130px / 120px / 105px
+ */
 @responsive: ~"only screen and (max-width : 768px)";
 body {
     padding-top: 114px;
@@ -42,53 +44,89 @@ body {
     }
 }
 
-/*Max-height for Editor in Wiki and Tasks module etc. - prevents scrolling to the editor menubar*/
+/*
+ * Editor in Wiki and Tasks module etc.: max-height to prevent scrolling to the editor menubar
+ */
 .ProsemirrorEditor.plainMenu .ProseMirror {
     max-height: 300px;
     overflow-y: auto;
 }
 
-/* "Show all Comments" link*/
+/*
+ * "Show all Comments" link
+ */
 .wall-entry .well .comment .show-all-link {
     font-size: 14px;
     color: @link;
     font-weight: 500;
-}
-.wall-entry .well .comment .show-all-link:hover {
-    color: @primary;
+
+    &:hover {
+        color: @primary;
+    }
 }
 
-/*Styling for Comment and Like icons*/
-.wall-entry-controls .likeLinkContainer a {
-	color: @heart-color !important;
-}
-.wall-entry-controls, .wall-entry-controls i, .wall-entry-controls span {
-	font-size: 16px;
-}
-/*Smaller under comments*/
-.comment-container {
-	.wall-entry-controls, .wall-entry-controls i, .wall-entry-controls span {
-		font-size: 14px;
-	}
-}
-
+/*
+ * Wall Entry Controls, esp. comment and like links
+ */
 .wall-entry-controls {
-	color: transparent;
-	padding: 5px 10px 0px;
+    color: transparent;
+    padding: 5px 10px 0px 0px;
+    line-height: 2;
+
+    /* colors for heart and star container */
+    .heartContainer a {
+	color: @heart-color !important;
+    }
+    .starContainer a {
+	color: @star-color !important;
+    }
+    
+    /* Font Sizes */
+    i {
+	font-size: 16px;
+    }
+    a {
+	font-size: 13px;
+    }
+
+    /* Hover */
+    .no-icon a, .comment-label, .reply-label, .comment-count.no-icon {
+        &:hover {
+            color: @primary !important;
+        }
+    }
+    .heartContainer a:hover i {
+		text-shadow:0 0 2px lighten(@heart-color, 10%);
+    }
+    .starContainer a:hover i {
+		text-shadow:0 0 2px lighten(@star-color, 10%);
+    }
+    .thumbsupContainer a:hover i {
+		text-shadow:0 0 2px lighten(@link, 10%);
+    }
+    &> a:nth-child(-n+2):hover i {
+		text-shadow:0 0 2px lighten(@link, 10%);
+    }
+    &> a:nth-child(n+3):hover {
+		color: @primary !important;
+    }
 }
+/* Font-sizes under comments */
+.comment-container .wall-entry-controls {
+    i {
+        font-size: 14px;
+    }
+    a {
+        font-size: 12px;
+    }
+}
+/*Distance for text when icon and text are shown*/
+.comment-label-both, .reply-label-both, .unlike-label-both, .like-label-both {
+    margin-left: 5px;
+}
+
 .wall-entry-footer > div > .wall-entry-controls {
 	border-top: 1px solid @background-color-secondary;
-}
-
-/*Hover*/
-.wall-entry-controls .likeLinkContainer a:hover {
-	text-shadow:0 0 2px lighten(@heart-color, 10%);
-}
-.wall-entry-controls > a:nth-child(-n+2):hover {
-	text-shadow:0 0 2px lighten(@link, 10%);
-}
-.wall-entry-controls > a:nth-child(n+3):hover {
-	color: @primary !important;
 }
 
 /*Statistics in Spaces, profiles, color @info instead of @link*/
@@ -97,13 +135,16 @@ body {
         .entry {
             .count {
                  color: @info;
-	    }
+	    	}
         }
     }
 }
 
 /*Profile fields when editing profile*/
-.panel-body > form  .form-group > label {width: 100%; margin-top: 10px;}
+.panel-body > form  .form-group > label {
+    width: 100%;
+    margin-top: 10px;
+}
 
 /*Badges (e.g. in space security settings)*/
 .badge {
@@ -118,14 +159,18 @@ body {
 
 /*Appearance of code*/
 .markdown-render, [data-ui-markdown], [data-ui-richtext] {
-	code {
-        	background-color: fade(@link, 20%);
-        	color: @text-color-highlight;
-        }
+    code {
+        background-color: fade(@link, 20%);
+        color: @text-color-highlight;
+    }
 }
 
 /*Print version*/
 @media print {
-	.comment_create {display: none;}
-	.content_edit {display:none;}
+    .comment_create {
+        display: none;
+    }
+    .content_edit {
+        display:none;
+    }
 }

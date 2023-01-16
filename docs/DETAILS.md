@@ -1,5 +1,6 @@
 # Smaller changes compared to the Community theme
 - General Layout: slightly decreased body padding (distance between topbars and content) for desktop and tablets - see `less/mixins.less`
+- Editor for tasks, wiki, polls etc.: fixed non-floating menubar lead to a lot of scrolling on mobile, see `less/mixins.less` (solved with max-height)
 - Login page: background: @background-color-page instead of @primary, text/h1/h2-color: @primary instead of white, link color: @link instead of white
 - E-Mails: Text color in footer: @text-color-soft instead of @text-color-soft2
 - E-Mails: Background color of body and table: @default (brighter) instead of @background-color-page

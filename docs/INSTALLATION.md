@@ -17,4 +17,4 @@ Corresponding versions (espacially for the CSS file):
 
 [v0.1](https://github.com/felixhahnweilheim/humhub-themes-orange/releases/tag/v0.1.0) => HumHub 1.10
 
-If you try out the theme with another HumHub version than the corresponding, please rebuild the css file (`themes/themeOrange/css/theme.css`) (see the [HumHub Theming guide](https://docs.humhub.org/docs/theme/css#compile-css-package)).
+If you try the theme with another HumHub version than the corresponding, please rebuild the css file (`themes/themeOrange/css/theme.css`) (see the [HumHub Theming guide](https://docs.humhub.org/docs/theme/css#compile-css-package)).

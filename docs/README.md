@@ -2,7 +2,7 @@
 
 ### A child theme for HumHub
 
-**Version: 0.5.0** (for HumHub 1.13)
+**Version: 0.5.1** (for HumHub 1.13)
 
 This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-module), the changes compared to the community theme are listed below.
 

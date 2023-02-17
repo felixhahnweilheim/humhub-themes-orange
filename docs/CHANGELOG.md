@@ -1,3 +1,6 @@
+## 0.5.1 (unreleased)
+- Enh: add configuration page (replace file configuration)
+
 ## 0.5.0 (January 16 2023)
 - Enh: make comment link and like link configurable (see added [CONFIG.md](CONFIG.md) for explanation)
   - like icon: choose between heart, star & thumbs up (new color variable: star-color)

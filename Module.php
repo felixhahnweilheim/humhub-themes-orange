@@ -3,7 +3,9 @@
 namespace humhub\modules\themeOrange;
 
 use humhub\modules\ui\view\helpers\ThemeHelper;
+use humhub\models\Setting;
 use Yii;
+use yii\helpers\Url;
 
 class Module extends \humhub\components\Module
 {
@@ -28,17 +30,30 @@ class Module extends \humhub\components\Module
 	public $likeIcon = 'heart';
 	
 	public static function getCommentLinkSetting() {
-		return Yii::$app->getModule('theme-orange')->commentLink;
+		return Yii::$app->getModule('theme-orange')->settings->get('commentLink');
 	}
 	
 	public static function getLikeLinkSetting() {
-		return Yii::$app->getModule('theme-orange')->likeLink;
+		return Yii::$app->getModule('theme-orange')->settings->get('likeLink');
 	}
 	
 	public static function getLikeIcon() {
-		return Yii::$app->getModule('theme-orange')->likeIcon;
+		return Yii::$app->getModule('theme-orange')->settings->get('likeIcon');
 	}
 	
+	/*
+	 * @inheritdoc
+	 */
+	public function getConfigUrl() {
+        return Url::to(['/theme-orange/config']);
+    }
+	
+	/*
+	 * @inheritdoc
+	 */
+	public function getDescription() {
+        return Yii::t('ThemeOrangeModule.base', 'A child theme for HumHub');
+    }
 	/**
 	 * @inheritdoc
 	 */

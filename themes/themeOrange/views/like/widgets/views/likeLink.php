@@ -12,6 +12,8 @@ $thumbsupFull = '<i class="fa fa-thumbs-up"></i>';
 $star = '<i class="fa fa-star-o"></i>';
 $starFull = '<i class="fa fa-star"></i>';
 
+$iconContainerClass = 'no-icon';
+
 if (Module::getLikeIcon() == 'heart') {
 	$iconContainerClass = 'heartContainer';
 	$iconEmpty = $heart;

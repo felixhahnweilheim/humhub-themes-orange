@@ -9,6 +9,8 @@ That's it! Since version 0.5 the theme is automatically activated.
 
 Corresponding versions (espacially for the CSS file):
 
+[v0.6](https://github.com/felixhahnweilheim/humhub-themes-orange/releases/tag/v0.6.0) => HumHub 1.14
+
 [v0.5.1](https://github.com/felixhahnweilheim/humhub-themes-orange/releases/tag/v0.5.1) / [v0.5.0](https://github.com/felixhahnweilheim/humhub-themes-orange/releases/tag/v0.5.0) / [v0.4.1](https://github.com/felixhahnweilheim/humhub-themes-orange/releases/tag/v0.4.1) / [v0.4](https://github.com/felixhahnweilheim/humhub-themes-orange/releases/tag/v0.4.0) => HumHub 1.13
 
 [v0.3](https://github.com/felixhahnweilheim/humhub-themes-orange/releases/tag/v0.3.0) => HumHub 1.12

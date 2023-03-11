@@ -2,7 +2,7 @@
 
 ### A child theme for HumHub
 
-**Version: 0.5.0** (for HumHub 1.13)
+**Version: 0.6.0** (for HumHub 1.14)
 
 This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-module), the changes compared to the community theme are listed below.
 
@@ -11,7 +11,7 @@ This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-m
 ## Changes in comparison to the community theme
 ### 1. Comment and like icons instead of text (configurable)
 
-You can decide to show icons instead of the text, both or only the text, see [configuration](CONFIG.md).  
+You can decide to show icons instead of the text, both or only the text.  
 As like icon you can choose between heart, star and thumbs up.
 
 <img src="../resources/screenshot-social-controls-2.png" width="200">

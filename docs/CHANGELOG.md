@@ -1,3 +1,7 @@
+## 0.5.1 (unreleased)
+- Enh: add configuration page (replace file configuration) - NOTE: Please remove file configuration and select your settings in the new administration page
+- Update less, css and views for HumHub 1.14 (now min version)
+
 ## 0.5.0 (January 16 2023)
 - Enh: make comment link and like link configurable (see added [CONFIG.md](CONFIG.md) for explanation)
   - like icon: choose between heart, star & thumbs up (new color variable: star-color)

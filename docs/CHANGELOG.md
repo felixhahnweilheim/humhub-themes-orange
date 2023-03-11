@@ -1,4 +1,4 @@
-## 0.5.1 (unreleased)
+## 0.6.0 (March 11 2023)
 - Enh: add configuration page (replace file configuration) - NOTE: Please remove file configuration and select your settings in the new administration page
 - Update less, css and views for HumHub 1.14 (now min version)
 

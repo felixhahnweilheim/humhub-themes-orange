@@ -8,6 +8,9 @@ This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-m
 
 **Author:** Felix Hahn, info@hahn-felix.de - self-learned
 
+## Installation
+see [INSTALLATION.md](INSTALLATION.md)
+
 ## Changes in comparison to the community theme
 ### 1. Comment and like icons instead of text (configurable)
 

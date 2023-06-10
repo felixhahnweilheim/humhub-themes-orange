@@ -33,7 +33,7 @@ class Module extends \humhub\components\Module
 	
     public static function getCommentLinkSetting() {
 		$commentLink = Yii::$app->getModule('theme-orange')->settings->get('commentLink');
-        if (empty($commentLink) {
+        if (empty($commentLink)) {
             $commentLink = $this->commentLink;
         }
         return $commentLink;
@@ -41,7 +41,7 @@ class Module extends \humhub\components\Module
 	
     public static function getLikeLinkSetting() {
 		$likeLink = Yii::$app->getModule('theme-orange')->settings->get('likeLink');
-        if (empty($likeLink) {
+        if (empty($likeLink)) {
             $likeLink = $this->likeLink;
         }
         return $likeLink;
@@ -49,7 +49,7 @@ class Module extends \humhub\components\Module
 	
 	public static function getLikeIcon() {
 		$likeIcon = Yii::$app->getModule('theme-orange')->settings->get('likeIcon');
-        if (empty($likeIcon) {
+        if (empty($likeIcon)) {
             $likeIcon = $this->likeIcon
         }
         return $likeIcon;

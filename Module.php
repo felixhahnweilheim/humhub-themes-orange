@@ -28,6 +28,8 @@ class Module extends \humhub\components\Module
 	 * @var string defines the like icon (options: heart, thumbsup, star)
 	 */
 	public $likeIcon = 'heart';
+    
+    const THEME_NAME = "themeOrange";
 	
 	public static function getCommentLinkSetting() {
 		return Yii::$app->getModule('theme-orange')->settings->get('commentLink');
@@ -54,6 +56,38 @@ class Module extends \humhub\components\Module
 	public function getDescription() {
         return Yii::t('ThemeOrangeModule.base', 'A child theme for HumHub');
     }
+
+    public function enable() {
+    
+	    /*Add Module settings*/
+		$module = Yii::$app->getModule('theme-orange');
+		$module->settings->set('commentLink', $module->commentLink);
+	    $module->settings->set('likeLink', $module->likeLink);
+		$module->settings->set('likeIcon', $module->likeIcon);
+        
+        if (parent::enable()) {
+            $this->enableTheme();
+            return true;
+        }
+        return false;
+    }
+    
+    private function enableTheme()
+    {
+        // Already a theme based theme is active
+        foreach (ThemeHelper::getThemeTree(Yii::$app->view->theme) as $theme) {
+            if ($theme->name === self::THEME_NAME) {
+                return;
+            }
+        }
+
+        $theme = ThemeHelper::getThemeByName(self::THEME_NAME);
+        if ($theme !== null) {
+            $theme->activate();
+            DynamicConfig::rewrite();
+        }
+    }
+    
 	/**
 	 * @inheritdoc
 	 */

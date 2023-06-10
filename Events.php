@@ -11,26 +11,7 @@ use yii\helpers\Url;
 
 class Events
 {
-    /*
-     * Callback after Module enabled
-     * @param ModuleEvent $event
-     */
-    public static function onModuleEnabled($event)
-    {
-        /*Activate Orange Theme*/
-        $theme = ThemeHelper::getThemeByName('themeOrange');
-        if ($theme !== null) {
-            $theme->activate();
-        }
-		
-		/*Add Module settings*/
-		$module = Yii::$app->getModule('theme-orange');
-		$module->settings->set('commentLink', $module->commentLink);
-	    $module->settings->set('likeLink', $module->likeLink);
-		$module->settings->set('likeIcon', $module->likeIcon);
-    }
-    
-	public static function onAdminMenuInit($event)
+    public static function onAdminMenuInit($event)
     {
 		$event->sender->addItem([
             'label' =>  Yii::t('ThemeOrangeModule.base', 'Theme Orange Configuration'),

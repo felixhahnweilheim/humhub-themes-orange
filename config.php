@@ -10,15 +10,10 @@ return [
     'class' => 'humhub\modules\themeOrange\Module',
     'namespace' => 'humhub\modules\themeOrange',
     'events' => [
-		[
-			'class' => ModuleManager::class,
-			'event' => ModuleManager::EVENT_AFTER_MODULE_ENABLE,
-			'callback' => [Events::class, 'onModuleEnabled']
-		],
-		[
-			'class' => AdminMenu::class,
-			'event' => AdminMenu::EVENT_INIT,
-			'callback' => [Events::class, 'onAdminMenuInit']
-		],
+	[
+	    'class' => AdminMenu::class,
+	    'event' => AdminMenu::EVENT_INIT,
+	    'callback' => [Events::class, 'onAdminMenuInit']
 	],
+    ],
 ];

@@ -50,7 +50,7 @@ class Module extends \humhub\components\Module
 	public static function getLikeIcon() {
 		$likeIcon = Yii::$app->getModule('theme-orange')->settings->get('likeIcon');
         if (empty($likeIcon)) {
-            $likeIcon = $this->likeIcon
+            $likeIcon = $this->likeIcon;
         }
         return $likeIcon;
 	}

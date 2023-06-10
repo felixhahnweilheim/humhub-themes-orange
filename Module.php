@@ -39,12 +39,20 @@ class Module extends \humhub\components\Module
         return $commentLink;
 	}
 	
-	public static function getLikeLinkSetting() {
-		return Yii::$app->getModule('theme-orange')->settings->get('likeLink');
+    public static function getLikeLinkSetting() {
+		$likeLink = Yii::$app->getModule('theme-orange')->settings->get('likeLink');
+        if (empty($likeLink) {
+            $likeLink = $this->likeLink;
+        }
+        return $likeLink;
 	}
 	
 	public static function getLikeIcon() {
-		return Yii::$app->getModule('theme-orange')->settings->get('likeIcon');
+		$likeIcon = Yii::$app->getModule('theme-orange')->settings->get('likeIcon');
+        if (empty($likeIcon) {
+            $likeIcon = $this->likeIcon
+        }
+        return $likeIcon;
 	}
 	
 	/*
@@ -63,12 +71,6 @@ class Module extends \humhub\components\Module
 
     public function enable() {
     
-	    /*Add Module settings*/
-		$module = Yii::$app->getModule('theme-orange');
-		$module->settings->set('commentLink', $module->commentLink);
-	    $module->settings->set('likeLink', $module->likeLink);
-		$module->settings->set('likeIcon', $module->likeIcon);
-        
         if (parent::enable()) {
             $this->enableTheme();
             return true;

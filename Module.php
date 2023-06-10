@@ -4,6 +4,7 @@ namespace humhub\modules\themeOrange;
 
 use humhub\modules\ui\view\helpers\ThemeHelper;
 use humhub\models\Setting;
+use humhub\libs\DynamicConfig;
 use Yii;
 use yii\helpers\Url;
 

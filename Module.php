@@ -31,8 +31,12 @@ class Module extends \humhub\components\Module
     
     const THEME_NAME = "themeOrange";
 	
-	public static function getCommentLinkSetting() {
-		return Yii::$app->getModule('theme-orange')->settings->get('commentLink');
+    public static function getCommentLinkSetting() {
+		$commentLink = Yii::$app->getModule('theme-orange')->settings->get('commentLink');
+        if (empty($commentLink) {
+            $commentLink = $this->commentLink;
+        }
+        return $commentLink;
 	}
 	
 	public static function getLikeLinkSetting() {

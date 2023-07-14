@@ -1,5 +1,6 @@
 ## TBA
 - Fix: theme was activated when another module was enabled
+- Remove AdminMenu item (configuration is stil available via Modules page)
 
 ## 0.6.0 (March 11 2023)
 - Enh: add configuration page (replace file configuration) - NOTE: Please remove file configuration and select your settings in the new administration page

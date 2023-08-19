@@ -33,26 +33,17 @@ class Module extends \humhub\components\Module
     const THEME_NAME = "themeOrange";
 	
     public static function getCommentLinkSetting() {
-		$commentLink = Yii::$app->getModule('theme-orange')->settings->get('commentLink');
-        if (empty($commentLink)) {
-            $commentLink = $this->commentLink;
-        }
+		$commentLink = Yii::$app->getModule('theme-orange')->settings->get('commentLink', 'icon');
         return $commentLink;
 	}
 	
     public static function getLikeLinkSetting() {
-		$likeLink = Yii::$app->getModule('theme-orange')->settings->get('likeLink');
-        if (empty($likeLink)) {
-            $likeLink = $this->likeLink;
-        }
+		$likeLink = Yii::$app->getModule('theme-orange')->settings->get('likeLink', 'icon');
         return $likeLink;
 	}
 	
 	public static function getLikeIcon() {
-		$likeIcon = Yii::$app->getModule('theme-orange')->settings->get('likeIcon');
-        if (empty($likeIcon)) {
-            $likeIcon = $this->likeIcon;
-        }
+		$likeIcon = Yii::$app->getModule('theme-orange')->settings->get('likeIcon', 'heart');
         return $likeIcon;
 	}
 	

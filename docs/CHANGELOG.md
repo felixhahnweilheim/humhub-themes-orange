@@ -1,4 +1,5 @@
-## TBA
+## 0.7.0 (August 18 2023)
+- update for HumHub 1.15
 - Fix: theme was activated when another module was enabled
 - Remove AdminMenu item (configuration is stil available via Modules page)
 

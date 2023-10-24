@@ -11,6 +11,9 @@ This is a child [theme module](https://docs.humhub.org/docs/theme/module#theme-m
 ## Installation
 see [INSTALLATION.md](INSTALLATION.md)
 
+## Dark Mode
+ThemeOrange is compatible with the [Dark Mode module](ttps://marketplace.humhub.com/module/dark-mode/description)
+
 ## Changes in comparison to the community theme
 ### 1. Comment and like icons instead of text (configurable)
 

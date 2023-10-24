@@ -1,3 +1,6 @@
+## 0.7.2 (TBA)
+- remove unneeded view files
+
 ## 0.7.1 (October 24 2023)
 - add dark stylesheet (compatibility with the [Dark Mode module](https://marketplace.humhub.com/module/dark-mode/description)
 - update for HumHub 1.15.0-beta.2

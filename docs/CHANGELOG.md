@@ -1,5 +1,7 @@
 ## TBA
+- add dark stylesheet (compatibility with the [Dark Mode module](https://marketplace.humhub.com/module/dark-mode/description)
 - update for HumHub 1.15.0-beta.2
+- update translations
 
 ## 0.7.0 (August 18 2023)
 - update for HumHub 1.15.0-beta.1

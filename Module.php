@@ -58,7 +58,7 @@ class Module extends \humhub\components\Module
 	 * @inheritdoc
 	 */
 	public function getDescription() {
-        return Yii::t('ThemeOrangeModule.base', 'A child theme for HumHub');
+        return Yii::t('ThemeOrangeModule.base', 'Orange theme for HumHub based on the Community Theme');
     }
 
     public function enable() {

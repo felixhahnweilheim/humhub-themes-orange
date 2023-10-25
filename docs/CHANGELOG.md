@@ -1,5 +1,5 @@
-## 0.7.2 (TBA)
-- remove unneeded view files
+## 0.7.2 (October 25 2023)
+- remove unneeded view files (fixes dark mode color issue in Messenger module)
 
 ## 0.7.1 (October 24 2023)
 - add dark stylesheet (compatibility with the [Dark Mode module](https://marketplace.humhub.com/module/dark-mode/description)
